@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200;600&family=Poppins:wght@100;200;300;400;500&family=Roboto:wght@400;900&display=swap');
+:root{
+    --limon: #25d1b2;
+    --verde: #0c443a;
+    --degradado:linear-gradient(90deg,var(--limon), var(--verde))
+}
+/* aspecto global */
+*{
+    font-family: 'Martian Mono', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+}
+*::selection{
+    background: var(--limon);
+    color:(white);
+}
+html{
+    font-size: 62.4%;
+    overflow-x: hidden;
+}
+body{
+    background: #f9f9f9;
+}
+section{
+    min-height: 100vh;
+    padding: 0;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+/* header estilos */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    
+}
+
+header .logo{
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+}
+
+header .logo span{
+    color: var(--limon);
+}
+
+header .navbar a{
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    color: black;
+    text-decoration: none;
+}
+
+header .navbar a:hover{
+    color: var(--limon);
+}
+
+header input{
+    display: none;
+}
+
+header label{
+    font-size: 3rem;
+    color: var(--verde);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+/* inicio */
+
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.inicio .content h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.inicio .image img{
+    width: 80vh;
+}
+/* boton */
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: .1rem;
+    background: var(--limon);
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+.btn:hover{
+    transform: scale(1.1);
+    background:  var(--verde);
+}
+/* seccion invierno */
+.detalle .titulo1,
+.productos .titulo1{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 3.5rem;
+    color: #333;
+}
+.detalle .caja-contenedor,
+.productos .caja-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+}
+.productos .caja-contenedor .heading{
+    color: #333;
+    font-size: 2rem;
+}
+.detalle .caja-contenedor .caja{
+    width:80vh;
+    background: white;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    margin: 1.5rem;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .2s linear;
+}
+.productos .caja-contenedor .caja{
+    width: 100vh;
+    background: white;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    margin: 1.5rem;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .2s linear;
+}
+.productos .caja-contenedor .caja .image{
+    height: 30rem;
+}
+.detalle .caja-contenedor .caja h2,
+.productos .caja-contenedor .caja h3{
+    font-size: 2rem;
+}
+.detalle .caja-contenedor .caja p,
+.productos .caja-contenedor .caja p{
+    font-size: 1.5rem;
+}
+
+.productos .caja-contenedor .caja p span{
+    color: var(--limon);
+}
+.detalle .caja-contenedor .caja .descripcion{
+    font-size: 2rem;
+    margin: .5rem;
+    color: #333;
+}
+
+.contacto{
+    text-align: center;
+    padding: 2rem 1rem;
+    background: url(../img/fondo_sub.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+.contacto form{
+    display: flex;
+    max-width: 70rem;
+    border: .2rem solid whitesmoke;
+    padding: .5rem;
+    border-radius: 5rem;
+    margin: 2rem auto;
+    height: 5.5rem;
+}
+
+
+.contacto h3 {
+    font-size: 2rem;
+    color: #f9f9f9;
+}
+
+.contacto form .email{
+    width: 100%;
+    border: .2rem solid rgba(0, 0, 0, .2);
+    box-shadow: 2rem;
+    background-color: #f9f9f9;
+}
+
+.contacto form input[type="email"]{
+    padding: 0 2rem;
+    font-size: 1.7rem;
+    background: none;
+    width: 100%;
+    color: white;
+    text-transform: none;
+    text-transform: capitalize;
+}
+.contacto form input[type="submit"]{
+    background: white;
+    width: 20rem;
+    font-size: 1.7rem;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+.contacto form input[type="email"]::placeholder{
+    color: whitesmoke;
+    text-transform: capitalize;
+}
+.contacto form input[type="submit"]:hover{
+    color: var(--limon);
+}
+
+footer{
+    background-color: var(--verde);
+    margin-top: 2rem;
+}
+
+footer .caja-contenedor{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+footer .caja-contenedor .caja h3{
+    font-size: 1.5rem;
+    color: white;
+}
+
+footer .caja-contenedor .caja{
+    color: var(--limon);
+    padding: 1rem;
+}
+
+footer .caja-contenedor .caja a{
+    color: var(--limon);
+    padding: 2rem;
+    font-size: 1rem;
+    
+}

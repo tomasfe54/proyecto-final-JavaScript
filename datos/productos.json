@@ -1,0 +1,21 @@
+[{
+    "codigo": "01",
+    "nombre": "Abrigo Black",
+    "precio": "2000$",
+    "imagen":"./img/ropainvierno1.jpg",
+    "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dolorum sunt obcaecati sapiente sequi quia perspiciatis! Autem eaque labore delectus accusamus, quisquam nesc"
+},
+{
+    "codigo": "02",
+    "nombre": "Black Mamba",
+    "precio": "2500$",
+    "imagen":"./img/ropainvierno2.png",
+    "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dolorum sunt obcaecati sapiente sequi quia perspiciatis! Autem eaque labore delectus accusamus, quisquam nesc"
+},
+{
+    "codigo": "03",
+    "nombre": "Abrigo Yellow",
+    "precio": "2000$",
+    "imagen":"./img/ropainvierno3.png",
+    "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dolorum sunt obcaecati sapiente sequi quia perspiciatis! Autem eaque labore delectus accusamus, quisquam nesc"
+}]
